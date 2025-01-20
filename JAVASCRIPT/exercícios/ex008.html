@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button onclick="calcular()">Clique para calcular</button>
+    <section id="cálculos">
+        <p>O resultado vai aparecer aqui...</p>
+    </section>
+
+
+    <script>
+        function calcular(){
+          let num = Number.parseFloat(window.prompt('Digite um número: '))             
+          let res = window.document.getElementById('cálculos')  
+          res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${num}</strong> <hr>
+        <p> O seu valor absoluto é ${num}
+        <p> A sua Parte inteira é ${num}
+        <p> O Valor inteiro mais próximo é ${num}
+        <p> A sua raiz quadrada é ${Math.sqrt(num)} 
+        <p> A sua raiz cúbica é ${Math.cbrt(num)}     
+        <p> O Valor de ${num}² é ${Math.pow(num, 2)}
+        <p> O valor de ${num}³ é ${Math.pow(num, 3)}     `  
+            
+        }
+
+
+    </script>
+</body>
+</html>
