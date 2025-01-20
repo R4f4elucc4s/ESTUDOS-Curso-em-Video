@@ -1,2 +1,2 @@
 # ESTUDOS-Curso em Vídeo
- Repositório de todos os cursos do CursoEmVídeo
+ Repositório de todos os cursos feitos até o momento, do CursoEmVídeo
